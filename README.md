@@ -19,3 +19,7 @@ pio run
 
 ## Notes
 This repo is mainly for learning and progress updates, so things may stay simple, messy, or experimental while ideas are tested.
+
+## Merge note
+If a platform shows a merge issue, this root `README.md` is the canonical README to keep.
+There is no separate project README under `First Code/`.
