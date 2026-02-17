@@ -1,18 +1,15 @@
 #include <Arduino.h>
-
-// put function declarations here:
-int myFunction(int, int);
-
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  // Use 9600 baud - the 11.0592 crystal makes this 100% accurate
+  Serial.begin(9600); 
+  pinMode(PIN_PB0, OUTPUT); // Connect an LED to Pin 1 (PB0)
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+  digitalWrite(PIN_PB0, HIGH);
+  delay(1000); // If this is exactly 1 second, your crystal is working!
+  digitalWrite(PIN_PB0, LOW);
+  delay(1000);
+  
+  Serial.println("Hello from ATmega32A!");
 }
