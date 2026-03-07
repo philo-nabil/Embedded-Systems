@@ -10,6 +10,5 @@ void loop() {
   delay(1000); // If this is exactly 1 second, your crystal is working!
   digitalWrite(PIN_PB0, LOW);
   delay(1000);
-  
-  Serial.println("Hello from ATmega32A!");
+
 }
